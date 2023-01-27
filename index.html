@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Firespindash's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="drawing.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div id="base">
+                <!-- Left Side -->
+                <div class="side">
+                    <div class="svg-draw round" id="child1"></div>
+                    <div class="svg-draw" id="child2"><div class="inside-out-left out" id="out1"></div></div>
+                    <div class="svg-draw round" id="child3"><div class="support-bottom" id="support1"></div><div class="inside-out-left out-bottom" id="out2"></div></div>
+                    <div class="svg-draw round" id="child4"></div>
+                    <div class="svg-draw" id="child5"><div class="inside-out-left out" id="out3"></div></div>
+                    <div class="svg-draw round" id="child6"></div>
+                    <div class="svg-draw round" id="child7"><div class="support-top" id="support2"></div><div class="inside-out-left out" id="out4"></div></div>
+                    <div class="svg-draw" id="child8"><div class="inside-out-left out" id="out5"></div></div>
+                    <div class="svg-draw round" id="child9"><div class="support-bottom" id="support3"></div><div class="inside-out-left out-bottom" id="out6"></div></div>
+                    <div class="svg-draw round" id="child10"></div>
+                    <div class="svg-draw round" id="child11"><div class="support-top" id="support4"></div><div class="inside-out-left out" id="out7"></div></div>
+                </div>
+                <!-- Right Side -->
+                <div class="side right">
+                    <div class="svg-draw round-right right" id="child12"></div>
+                    <div class="svg-draw right" id="child13"><div class="inside-out-right out" id="out8"></div></div>
+                    <div class="svg-draw round-right right" id="child14"></div>
+                    <div class="svg-draw right" id="child15"><div class="inside-out-right out" id="out9"></div></div>
+                    <div class="svg-draw round-right right" id="child16"></div>
+                    <div class="svg-draw right" id="child17"><div class="inside-out-right out" id="out10"></div></div>
+                    <div class="svg-draw round-right right" id="child18"></div>
+                    <div class="svg-draw round-right right" id="child19"><div class="support-top" id="support5"></div><div class="inside-out-right out-bottom" id="out11"></div></div>
+                    <div class="svg-draw right" id="child20"><div class="inside-out-right out" id="out12"></div></div>
+                    <div class="svg-draw round-right right" id="child21"><div class="support-bottom" id="support6"></div><div class="inside-out-right out-bottom" id="out13"></div></div>
+                    <div class="svg-draw round-right right" id="child22"></div>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="img-div"><img class="image" src="profile-img.jpg"></div>
+            </div>
+            <p id="slogan">Ready to help building your project</p>
+            <button class="contact-me" onclick="window.location.href = 'mailto:firespindash@gmail.com'; fireNotification();">Let's Talk!</button>
+        </div>
+        <div id="sections-button" onclick="showSideBar()" >
+            <img class="image" id="list" src="list.png" alt="sections-list-button">
+            <p>Sections</p>
+        </div>
+        <div id="sidebar">
+            <button id="close-button" onclick="hideSideBar()"><img class="image" id="close" src="close.svg" alt="close-sidebar-button"></button>
+            <button class="big-button" id="dark-mode-button" onclick="switchMode()">Dark mode</button>
+            <div id="sections-list">
+                <button class="big-button" onclick="redirectToSection(0)">About</button>
+                <button class="big-button" onclick="redirectToSection(1)">Certifications</button>
+                <div id="expand-section">
+                    <button id="expand-button" onclick="expandList()"><img class="image" id="arrow" src="list-arrow.svg" alt="expand-button"></button>
+                    <h3>My Works</h3>
+                </div>
+                <div id="sections">
+                    <button class="section-item" onclick="redirectToSection(2)"><div class="color-square yellow-box"></div><p>colorful-snake-game</p></button>
+                    <button class="section-item" onclick="redirectToSection(3)"><div class="color-square red-box"></div><p>imc-calculator</p></button>
+                    <button class="section-item" onclick="redirectToSection(4)"><div class="color-square yellow-box"></div><p>Blurred-UI</p></button>
+                    <button class="section-item" onclick="redirectToSection(5)"><div class="color-square yellow-box"></div><p>2d-platform-game</p></button>
+                    <button class="section-item" onclick="redirectToSection(6)"><div class="color-square yellow-box"></div><p>blurred-landing-page</p></button>
+                    <button class="section-item" onclick="redirectToSection(7)"><div class="color-square green-box"></div><p>mint-i3wm</p></button>
+                    <button class="section-item" onclick="redirectToSection(8)"><div class="color-square yellow-box"></div><p>index-html-ui-preset</p></button>
+                    <button class="section-item" onclick="redirectToSection(9)"><div class="color-square yellow-box"></div><p>neon-palette</p></button>
+                    <button class="section-item" onclick="redirectToSection(10)"><div class="color-square blue-box"></div><p>login-php-app</p></button>
+                    <button class="section-item" onclick="redirectToSection(11)"><div class="color-square green-box"></div><p>custom-resolution-x11</p></button>
+                    <button class="section-item" onclick="redirectToSection(12)"><div class="color-square red-box"></div><p>qt-html-transparency-example</p></button>
+                    <button class="section-item" onclick="redirectToSection(13)"><div class="color-square green-box"></div><p>coding-rice-installer</p></button>
+                    <button class="section-item" onclick="redirectToSection(14)"><div class="color-square red-box"></div><p>apache-server-control-app</p></button>
+                    <button class="section-item" onclick="redirectToSection(15)"><div class="color-square red-box"></div><p>hyper-custom-controls-minimalist</p></button>
+                    <button class="section-item" onclick="redirectToSection(16)"><div class="color-square yellow-box"></div><p>Fire-Startpage</p></button>
+                    <button class="section-item" onclick="redirectToSection(17)"><div class="color-square yellow-box"></div><p>Altum_Fluctus-Theme</p></button>
+                    <button class="section-item" onclick="redirectToSection(18)"><div class="color-square green-box"></div><p>dotfiles</p></button>
+                    <button class="section-item" onclick="redirectToSection(19)"><div class="color-square green-box"></div><p>spectrwm-config</p></button>
+                </div>
+                <button class="big-button" onclick="redirectToSection(20)">And More...</button>
+                <button class="go-back-button" id="sidebar-button" onclick="up(0);">↑ Go back</button>
+            </div>
+        </div>
+        <div class="section" id="about">
+            <div id="text-div">
+                <p id="aboutme-text">My name is Lucas Adriel de Lima. I am a <span class="mutable" id="age">18</span> years old programmer from Sao Paulo City, Brazil. And I am 
+<span class="mutable" id="work-state">up to help developing something</span>. I am a Full-Stack developer, I know the technologies that composes 
+the web development. Well, I took it a step further by learning things about Linux, that I also like a lot, 
+and even a bit of the C programming language! So, I even know about system maintenance and how to
+setup a server, for instance. I have also gathered knowledge with scripting languages and desktop
+program development. I speak <span class="mutable" id="languages">Portuguese, English and German</span>. The programming languages that I know 
+and have had experience are: <span class="mutable" id="code-langs">Python, Shell Script, PHP, MySQL (MariaDB), Javascript, C and C++</span>.
+And obviously I know HTML and CSS. I have at least did something with the following frameworks: 
+Node.js, Vue.js, React-native, Electron and Expo. I can work with frameworks, but I actually do not like to
+use them, because they are less stable than proven software like PHP or MySQL. I do not like to use OOP 
+(Object Oriented Programming) paradigm of development, I prefer to use the function oriented programming,
+I think it is easier to maintain and the code is more portable. I have background experiences and knowledge 
+with tools like Git, Inkscape, Kdenlive and some others too. I am looking to make a better web and contribute
+to a better desktop experience. I like to do software that makes people need to spend less time using it, 
+by the way computers were created for this, for people to spend less time computing and doing calculations 
+with data. I have some certifications, which appear below in the next section. And after it, I show some of my 
+works and experiences. I have also categorized my works in four branches of development:     <span class="yellow">Front-end</span> sample, 
+<span class="blue">back-end</span> sample,     <span class="green">scripting</span> sample and     <span class="red">native dev</span> sample. Where each one is represented by a different 
+color as shown.</p>
+            <div id="wrapper">
+                <div class="wrapper-box" id="last-box"><div class="color-square yellow-box" id="front-end"></div></div>
+                <div class="color-square blue-box" id="back-end"></div>
+                <div class="wrapper-box"></div>
+                <div class="wrapper-box" id="box1"><div class="color-square red-box" id="mobile-dev"></div></div>
+                <div class="wrapper-box" id="box2"><div class="color-square green-box" id="scripting"></div></div>
+            </div>
+            </div>
+        </div>
+        <div class="section" id="certifications">
+            <div class="title">
+                <h1 id="certifications-title">Certifications</h1>
+                <p id="certifications-text">I have graduated in High School and studied a lot about programming while in school.
+I have a certificate of PHP and one other specifically of PHP OOP. I did some other courses, 
+of MySQL and HTML. A fun fact, I could not pass the MySQL test. And, the HTML & CSS 
+course I did had no certificate. I have interest in the HTML course from w3schools and in 
+the LPI certification. Nevertheless, I can get more certifications if needed.</p>
+            </div>
+            <div id="certificate-list">
+                <div id="php">
+                    <div class="certificate-frame" onclick="window.location.href = 'certificado-php.jpeg'">
+                        <img class="image certificate" src="certificado-php.jpeg"  alt="php certificate">
+                    </div>
+                    <div class="bottom-shadow"></div>
+                </div>
+                <div id="oop-php">
+                    <div class="certificate-frame" onclick="window.location.href = 'certificado-poo-php.jpeg'">
+                        <img class="image certificate" src="certificado-poo-php.jpeg" alt="oop-php certificate">
+                    </div>
+                    <div class="bottom-shadow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works1">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">colorful-snake-game</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-fullscreen" src="colorful-snake-game.png" alt="colorful snake game photo"></div>
+                <div class="animated project-text-box">
+                    <p>This is the first project I uploaded to GitHub. And I think it fits in the 
+                        front-end branch. It was really cool to develop and testing it again I could
+                        not resist changing parts of the code. It was also the first time I used
+                        a JS framework, Electron, for the desktop version. In some of the next
+                        repositories I make some comments about Electron. I saw a tutorial and
+                        made it, applying the idea that I have had, adding gradients.
+                        I thought I had a really nice idea and from it my sense of design began.
+                        I started working with colors, what combinations were good, and so on.
+                        From this repository, it is still possible to see how it was when I started
+                        learning programming. I struggled to implement the pause button and
+                        with the apple and tail overlap, but I think it has nice mechanics. 
+                        I did not know about responsiveness, how to do a wiki, etc. But
+                        I believe this is a nice game and a good start.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works2">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square red-box project-box"></div>
+                <h2 class="animated">imc-calculator</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-icon" src="imc-calculator.png" alt="imc calculator icon"></div>
+                <div class="animated project-text-box">
+                    <p>It is a mobile app. I made it using react-native and the Expo framework.
+                        As explained in the repository, 'IMC' stands for 'BMI' in Portuguese.
+                        When testing the app I could not run it, dependencies seem to be broken,
+                        I could not build it also. And it showed some things to me. I am luck 
+                        to have packaged a version. Handling dependencies with JS frameworks
+                        was a mess, I even tried to use dependabot, but it proved to be really
+                        hard to keep things safe and stable, a few months and it started throwing
+                        errors. It was also implemented from a tutorial, my first mobile app, first
+                        time using i18n for translations, and it even has an ad page! Beyond that,
+                        if I am not wrong, you need an account to make a deploy, get things working
+                        as they should in Expo. So, from my experience testing it, I would not 
+                        recommend using react-native or Expo for developing a mobile application
+                        with web technologies. If I had to, I would recommend Ionic.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works3">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">Blurred-UI</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" id="works3-image" src="blurred-ui.png" alt="blurred ui photo"></div>
+                <div class="animated project-text-box">
+                    <p>This project shows well part of my learning process when I was starting my
+                        web development studies. And I think this proves my blur effect enthusiasm.
+                        Years later, I found a way to polyfill backdrop blur effect, but it still requires
+                        the filter tag to work, if I am not wrong, I posted it to GitHub Gist. I believe
+                        that the first version shows better my learning process than the revisited 
+                        one, even that it might be a bit broken in comparison. It seems to be my first
+                        project focusing only on a website. Because of it that this website is prettier
+                        than the one I did for my mobile app, from when I started studying HTML,
+                        CSS and JS without knowing what design was, just liking the entire concept.
+                        I actually have started in Python, but liked a lot web technologies when I first
+                        saw them, on a video from a guy implementing a beautiful login page. And I though
+                        "What he can do with code! I want to try it too". Then I began my studies with it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works4">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">2d-platform-game</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" src="2d-platform-game.png" alt="2d platform game photo"></div>
+                <div class="animated project-text-box">
+                    <p>This is one of the projects I had not made any big changes to it. It was
+                        when I realized it was hard to make a game and was not really my thing. After it,
+                        I still tried to do something like a platform game, and made it with Gdevelop,
+                        a engine that translates the work to JS, but never published it. Doing it,
+                        I already had some notions about design, specially I got to know material 
+                        design principles while doing this project. The sticky physics are too sticky.
+                        And the game design is not the best, there is a nice shortcut there and just
+                        one level. If I were to make a game today I would make the canvas responsive
+                        and use proper implementations of real math and physics formulae to do
+                        the physics of it. Still though I made the pixel art myself.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works5">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">blurred-landing-page</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" src="blurred-landing-page.png" alt="blurred landing page photo"></div>
+                <div class="animated project-text-box">
+                    <p>Well, another project with blur effect and based on a tutorial. My idea was to
+                        simply add blur to the site. This really gave me insights on JS. When I made it,
+                        I was still using the pseudo element method to achieve the effect. In this case,
+                        it could be easily polyfilled to get backwards compatibility, but in the way it
+                        was done still works nice. I made only small changes to it, so it is good to show
+                        my learning process too. I probably made this one before the last one, but
+                        apparently I created this repository after the repository from the last project.
+                        The effect disappears when typing, I think it is not a really interesting function
+                        for the user. It plays a bit with local storage using JS. And that is it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works6">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square green-box project-box"></div>
+                <h2 class="animated">mint-i3wm</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" id="works6-image" src="mint-i3wm.jpg" alt="mint i3wm photo"></div>
+                <div class="animated project-text-box big-text">
+                    <p>This one is a modular script to install an i3, which is a window manager, a tile
+                        system, in Linux Mint, which is a popular Linux OS. Linux Mint was the first
+                        Linux  operating system that I used, it is considered by many as an easy to
+                        use, to start using Linux. And i3 is also the entry point to the window manager
+                        customization, specially to tiling window managers. They work by tiling the
+                        windows pretty much like in the image. I do not feel like it is easier to start with.
+                        but it was my first experience with this kind of window managers. The thing is
+                        some people consider them to be more optimal and better to use. At the end,
+                        the benefits are not so high for me, I was not used to it. And, I did not know how
+                        to do it right. More about it, I speak in the penultimate project. Maybe it will stop
+                        working in the future, I did many adjustments in it. But it is stable and the first
+                        register that I studied Bash, a scripting language to interact with the OS, and
+                        about OSs, distributions. With it, I could setup an entire environment quickly,
+                        beyond setting only the web server, which I was yet to study deeper.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works7">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">index-html-ui-preset</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" id="works7-image" src="index-html-ui-preset.png" alt="index html ui preset photo"></div>
+                <div class="animated project-text-box">
+                    <p>It is the front-end sample of a project which has also a back-end sample that
+                        is in one of the sections below, this project is the true FullStack one. I created this
+                        because then I was already using servers and studying back-end code, and
+                        realized that I always had to create an index.html for the server, to start testing
+                        my PHP code. So, I made this preset of an index.html to not need to create it and
+                        to avoid having errors in the server. I started using the Apache Server for my
+                        studies and I still like using and setting it up. Also, I made it in a way I can put
+                        links directly into the HTML page, this way I can access routes more easily. I had
+                        a bit of a concernment about images, so I designed the image myself and got a
+                        free icon. This was a fun project to make.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works8">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">neon-palette</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" src="neon-palette.png" alt="neon palette photo"></div>
+                <div class="animated project-text-box big-text">
+                    <p>It is a collection of colors I gathered with time. Again, I think I made this before the
+                        last section, I used some of the color palettes from here in the background image
+                        I made in the other project. I started using and searching colors, then I decided to
+                        create my own set of colors, all colors in the website come from the palettes and my
+                        searches, it even has attributions from the places I gathered them. In the page I put
+                        just the primary colors palette and the gradients, the other palettes I organized in
+                        a package. As I liked a lot neon colors, and most of them are neon colors, I named it
+                        "neon palette". I completely remake the usability of the page, to copy colors
+                        more easily and to be a bit more responsive. A bit about CSS frameworks, I do not know
+                        much about them, the one  I got the closest was Bootstrap, but I never really used it.
+                        My favorite framework in this case is Tailwind, I even included the Tailwind v1 colors
+                        in my extended palette. I think I could use it, because it is close to pure CSS, the
+                        colors are great too, one of the best frameworks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works9">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square blue-box project-box"></div>
+                <h2 class="animated">login-php-app</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-icon" id="works9-image" src="login-php-app.png" alt="login php app photo"></div>
+                <div class="animated project-text-box">
+                    <p>It is the back-end sample part of the project I talked about earlier. It is really simple,
+                        but nice. Here I wrote a better wiki, on how to setup it. I used md5 to store the
+                        passwords just because it is an example, using md5 algorithm in practice is not secure.
+                        Strangely enough, when you mix PHP code with HTML, GitHub considers it to be Hack,
+                        an implementation of PHP made by Meta™. This is the first back-end focused repository
+                        I made. I seems that I can do more writing less with PHP and MySQL, in my case MariaDB,
+                        which is free. So, it appears that I did not use it much, but I like it a lot. These languages
+                        are really stable and safe for their purposes. The only thing that could reach close, be
+                        interesting enough using, is Phoenix, an Elixir framework focused in scalability,
+                        at least in my opinion.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works10">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square green-box project-box"></div>
+                <h2 class="animated">custom-resolution-x11</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" id="works10-image" src="custom-resolution-x11.png" alt="custom-resolution-x11 code"></div> 
+                <div class="animated project-text-box">
+                    <p>This project was made for when I used Virtualbox VM. Now I prefer QEMU, and I discovered recently
+                        that doing it is not really necessary with Virtualbox. I originally created this script to
+                        change the screen resolution inside a virtual machine, my place to test out many things,
+                        mainly new window managers and desktop interfaces that I have discovered. It usually failed to have
+                        a resolution that fit nice for me (higher Xorg resolution on smaller screen). Changing the resolution
+                        was difficult and did not work well. The script works in a bit technical way, it calls tools of the
+                        system that handles the display server, the classic case in Linux, Xorg, and tells specific instructions
+                        to the server to resize the resolution to a new custom one, something that is really powerful and nice to
+                        see working. Still though it worked a little different in every environment and desktop, that I used it,
+                        specially the behavior of the fixscreen.sh script generated. A different project, but nice at some degree.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works11">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square red-box project-box"></div>
+                <h2 class="animated">qt-html-transparency-example</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-icon" id="works11-image" src="qt-html-transparency-example.png" alt="qt html transparency example photo"></div>
+                <div class="animated project-text-box">
+                    <p>It is a nice one. Here I managed to get a Qt application, which is a native framework for making
+                        user interfaces, working with web technologies without Electron. Qt is a really powerful framework
+                        in this subject and is well-known, I think it is even possible to design mobile applications with it.
+                        I made a window with transparency settings, used the WebKit embedded browser, and done, I
+                        can use HTML, CSS and JS between other technologies looking native with this nice effect and it
+                        is not so memory consuming. If you try it, just pay attention to the dependencies, I had forgotten to
+                        list them. I could make an entire web application that fits in the desktop and play around with it,
+                        like if it was a normal application, with the stability and powers of this framework. What a solution! I think.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works12">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square green-box project-box"></div>
+                <h2 class="animated">coding-rice-installer</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" src="coding-rice-installer.png" alt="coding rice installer photo"></div>
+                <div class="animated project-text-box big-text">
+                    <p>It is a project where I try to collaborate with other people. Still in my researches about Linux and
+                        desktop environments. The script is to install a theme, desktop customization, made by another
+                        person. So I gathered the steps and the extra configuration files necessary, and created the install
+                        script. I did some improvements to the theme too. I think it may not work in the future. These things
+                        change a lot too, and seeing it again, I realized that this just works specifically with some specific
+                        tools and with specific distributions of Linux, Arch-Based distributions, in this case. And it is not really
+                        good. The most portable script is the one that installs the Dosis font, and it is not still as portable
+                        as it could be. A bit about my researches, I should have written about it before, I have complains with
+                        all the window managers I tested; Openbox is one close to what I am used to, but while configuring
+                        things problems appear. However, I think this was a step towards the right direction and that I had improvements.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works13">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square red-box project-box"></div> 
+                <h2 class="animated">apache-server-control-app</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" id="works13-image" src="apache-server-control-app.png" alt="apache server control app photo"></div>
+                <div class="animated project-text-box">
+                    <p>In this project, I used some of my past knowledge to make a program that speeds the process of
+                        handling the Apache Server graphically, something I have not found before. It was for helping me already
+                        using the server a lot. This still carries some technical implementation errors of mine, but I think it is already
+                        a bit better. It is really stable and more portable at all. Also, the first time Python appears in my repositories,
+                        not that I have used it much unfortunately. I consider this application one of the first real results of my
+                        studies outside of the front-end and back-end development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works14">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square red-box project-box"></div>
+                <h2 class="animated">hyper-custom-controls-minimalist</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-icon" src="hyper-custom-controls-minimalist.png" alt="hyper custom controls minimalist photo"></div>
+                <div class="animated project-text-box big-text">
+                    <p>This one I did when I tried to collaborate with other people, again. But this time, by the traditional method of
+                        forking a repository. I wanted to do these things, give contributions and more. But it failed, because I guess
+                        the original repository got abandoned or it was completed. I think my changes could be merged, however it
+                        seems unlikely to happen. And this was my experience trying to work together mainly. I did this to improve the
+                        customization experience of the plug-in, which is for the Hyper.js terminal, a terminal application based on web
+                        technologies, it uses Electron. The plug-in really makes it more beautiful in my opinion and I had an idea of
+                        improvement, it changes the window buttons in a customizable way, to these little circles. And I thought of adding
+                        the possibility to customize the visibility of the title and of the hamburger menu too, each one separately. With it,
+                        the terminal can be like the code displays that people do with mockups of terminals, that makes you focus on the code
+                        with a nice interface, in a real environment.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works15">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">Fire-Startpage</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-hd" src="fire-startpage.png" alt="fire startpage homepage"></div>
+                <div class="animated project-text-box">
+                    <p>It is a homepage for the browser that I made already with an idea of a portfolio, the one you are seeing now. It has
+                        options to add more websites to the grid and to remove, which are all implemented just in the front-end without
+                        frameworks, for me this is incredible. It was a lot of work, but was fun to do. And now I know it is possible with only
+                        default CSS and JS. There are many functions, to change the background image, change the grid size, and more.
+                        The default items are not entirely my preferences, but between them there are real recommendations I would do.
+                        At this point, I realized that I was still better and had a lot of fun at front-end development, more than in other
+                        things I was studying and using, and also the programming language I had more fun was PHP. I really like it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works16">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square yellow-box project-box"></div>
+                <h2 class="animated">Altum_Fluctus-Theme</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-fullscreen" src="altum_fluctus-theme.png" alt="altum fluctus theme photo"></div>
+                <div class="animated project-text-box big-text">
+                    <p>This is a theme that I made with the knowledge I have gathered through my studies. Because it is done with CSS,
+                        I will still consider it as a front-end sample. It was an idea I had while doing my customizations, configurations, and
+                        I think it is really beautiful. It supports the two major desktop environments in Linux, KDE and Gnome. There are many
+                        inconsistencies and I can not have something as simple as windows with blur effect in all window elements, like
+                        panels, titlebars, rounded corners and a simple border around it all. And I do not have the necessary knowledge to
+                        change it, not only the C or C++ should be known, but also how their software structures work. When doing it, I was
+                        already doing things for my personal use, which I show in the next section. I encountered problems and I even tried
+                        to patch the code, do changes, but it did not work. I worked with what I knew, mostly the CSS part. I think it is
+                        a nice theme, good colors on eye, between other aspects.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works17">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square green-box project-box"></div>
+                <h2 class="animated">dotfiles</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-fullscreen" src="dotfiles.png" alt="dotfiles photo"></div>
+                <div class="animated project-text-box big-text">
+                    <p>Finally, this is the result of the desktop part of my studies. I even made a theme customization for my personal
+                        settings, which is what dotfiles mean. To do it, CSS knowledge is needed, so I used much of what I studied and I
+                        like it a lot. And it is still the closest I get from the experience of blur effect and rounded corners that I have
+                        talked earlier, I mean in a more consistent way, not consistent enough yet, this may change soon. I applied many nice
+                        concepts to create my own configurations. This project targets the usability for production and some other technical
+                        goals, and a bit of the history is available in the repository. It is not completed yet, I plan to add a whole side bar with
+                        widgets and a top menu bar with many functionalities, to speed up some processes. If it were not the need for the blur
+                        effect I probably could have a more refined experience in some Linux environments than I would in MacOS, and that is
+                        awesome. In other words this is a backup, and more of a weekend project now, just a hobby, a useful one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="works18">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="animated color-square green-box project-box"></div>
+                <h2 class="animated">spectrwm-config</h2>
+            </div>
+            <div class="project-aspects">
+                <div class="animated image-box"><img class="image project-image-fullscreen" src="spectrwm-config.png" alt="spectrwm config photo"></div>
+                <div class="animated project-text-box">
+                    <p>At last, this is my favorite tiling window manager. And I created this repository to save this specific part of my researches
+                        and studies, something that I did before even starting my dotfiles project. It is a nice extra as I can not work really well
+                        without desktop environments. So I do not use it daily. I admit that I focused on studying other things more than web
+                        technologies for a while, however I think that everything I learned really is useful for me, directly or indirectly. I feel that
+                        I gained efficiency; experience in how to improve the usability of an application, how to build it in a cohesive way;
+                        knowledge about how to setup a system; and more. By the way, exploring things like this is powerful, it is from there that
+                        things like having the theme colors matching the wallpaper that Android and others use now.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="conclusion">
+            <div class="title">
+                <h1 class="animated">My Works</h1>
+            </div>
+            <h2 class="animated" id="more">And More...</h2>
+            <div class="project-aspects">
+                <div class="animated image-box" id="special-box"><img class="image project-image-hd" id="conclusion-image" src="more-edit.png" alt="my projects folder"></div>
+                <div class="animated project-text-box">
+                    <p>There are things I made that I have not published, mostly tests, parts of my learning process and some actually useful
+                        stuff. These are the repositories I have created, including this one. Also, my next repositories will not be included here,
+                        but I may try to add my real works in the future. If you are interested, you can contact me by <span id="mail" onclick="copyNotification()">email</span>. And that is it! Thanks
+                        for reading.</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p class="footer-text">© Firespindash. All Rights Reserved.</p>
+            <p class="footer-text">Time to develop: 78h 33m 10s</p>
+            <p class="footer-text">Email for contact: firespindash@gmail.com</p>
+            <button class="go-back-button" id="footer-button" onclick="up(1);">↑ Go back</button>
+        </div>
+    </body>
+    <script src="darkmode.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+</html>

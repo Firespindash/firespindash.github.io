@@ -1,0 +1,252 @@
+.side {
+    position: relative;
+    width: 80%; height: 100%;
+}
+
+.svg-draw {
+    position: relative;
+    height: 3.645833333vmax;
+    background-color: #444;
+}
+
+.round {
+    border-top-right-radius: 2.34375vmax;
+    border-bottom-right-radius: 2.34375vmax;
+}
+
+.right {
+    width: 20%;
+    float: right;
+}
+
+.round-right {
+    border-top-left-radius: 2.34375vmax;
+    border-bottom-left-radius: 2.34375vmax;
+}
+
+.inside-out-left {
+    position: relative;
+    height: 3.75vmax;
+    border-radius: 50%;
+}
+
+.inside-out-right {
+    position: relative;
+    height: 3.75vmax;
+    border-radius: 50%;
+}
+
+.out {
+    background: linear-gradient(102deg, #fdfbfb 45%, #57ca85 0%, #184e68 70%);
+    width: 3.645833333vmax;
+    background-size: 100% 40.1625vmax;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.out-bottom {
+    top: -2.34375vmax;
+    width: 3.645833333vmax;
+    background: linear-gradient(102deg, #fdfbfb 45%, #57ca85 0%, #184e68 70%);
+    background-size: 100% 40.1625vmax;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.support-top {
+    position: relative;
+    width: 4.6875vmax; height: 1.666666667vmax;
+    background-color: #444;
+}
+
+.support-bottom {
+    position: relative;
+    top: 50%;
+    width: 4.6875vmax; height: 2.34375vmax;
+    background-color: #444;
+}
+
+#base {
+    position: relative;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#child1 {
+    top: 0; left: 0;
+    width: 12.760416667vmax;
+}
+
+#child2 {
+    width: 7.291666667vmax;
+}
+
+#out1 {
+    right: -5.572916667vmax;
+}
+
+#child3 {
+    width: 9.895833333vmax;
+    border-bottom-right-radius: 0;
+}
+
+#out2 {
+    right: -9.84375vmax;
+}
+
+#support1 {
+    right: -6.510416667vmax;
+}
+
+#child4 {
+    width: 24.479166667vmax;
+}
+
+#child5 {
+    width: 14.583333333vmax;
+}
+
+#out3 {
+    right: -12.864583333vmax;
+}
+
+#child6 {
+    width: 16.666666667vmax;
+}
+
+#child7 {
+    width: 13.020833333vmax;
+    border-top-right-radius: 0;
+}
+
+#out4 {
+    top: -1.666666667vmax; right: -12.96875vmax;
+}
+
+#support2 {
+    right: -10.104166667vmax;
+    height: 1.666666667vmax;
+}
+
+#child8 {
+    width: 10.833333333vmax;
+}
+
+#out5 {
+    right: -8.958333333vmax;
+}
+
+#child9 {
+    width: 12.5vmax;
+    border-bottom-right-radius: 0;
+}
+
+#out6 {
+    left: 12.447916667vmax;
+}
+
+#support3 {
+    right: -9.635416667vmax;
+}
+
+#child10 {
+    width: 17.96875vmax;
+}
+
+#child11 {
+    width: 7.8125vmax;
+    border-top-right-radius: 0;
+}
+
+#out7 {
+    top: -1.666666667vmax; right: -7.760416667vmax;
+}
+
+#support4 {
+    right: -4.947916667vmax;
+    height: 1.666666667vmax;
+}
+
+#child12 {
+    width: 25vmax;
+}
+
+#child13 {
+    width: 14.0625vmax;
+}
+
+#out8 {
+    left: -1.822916667vmax;
+}
+
+#child14 {
+    width: 16.666666667vmax;
+}
+
+#child15 {
+    width: 11.458333333vmax;
+}
+
+#out9 {
+    left: -1.822916667vmax;
+}
+
+#child16 {
+    width: 21.875vmax;
+}
+
+#child17 {
+    width: 15.104166667vmax;
+}
+
+#out10 {
+    left: -1.822916667vmax;
+}
+
+#child18 {
+    width: 18.75vmax;
+}
+
+#child19 {
+    width: 15.104166667vmax;
+}
+
+#support5 {
+    left: -1.5625vmax;
+}
+
+#out11 {
+    top: -1.666666667vmax; left: -3.645833333vmax;
+}
+
+#child20 {
+    width: 12.5vmax;
+}
+
+#out12 {
+    left: -1.822916667vmax;
+}
+
+#child21 {
+    width: 15.625vmax;
+}
+
+#child22 {
+    width: 20.3125vmax;
+}
+
+#support6 {
+    left: -1.822916667vmax;
+}
+
+#out13 {
+    left: -3.645833333vmax;
+}
+
+@media only screen and (orientation: portrait) {
+    #child4 {
+        width: 22vmax;
+    }
+}
