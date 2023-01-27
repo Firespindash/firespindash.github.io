@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "Comfortaa";
-    src: url("./firespindash.github.io/font/Comfortaa-VariableFont_wght.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 * {
     margin: 0;
     font-family: 'Comfortaa', cursive;
@@ -51,7 +48,6 @@ body {
     height: fit-content;
     scrollbar-width: none;
     justify-content: space-between;
-    font-family: 'Comfortaa';
     display: flex;
     flex-direction: column;
     overflow-x: hidden !important;
